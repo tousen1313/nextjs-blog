@@ -1,13 +1,13 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '../styles/Home.module.css';
+import Layout, { siteTitle } from '../components/layout';
+import utilStyles from '../styles/utils.module.css';
 
-import { getSortedPostsData } from "../lib/posts";
+import { getSortedPostsData } from '../lib/posts';
 
-import Link from "next/link";
-import Date from "../components/date";
+import Link from 'next/link';
+import Date from '../components/date';
 
 //SSGの場合
 export async function getStaticProps() {
@@ -35,15 +35,13 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>
-          私はフルスタックエンジニアです/Udemy講師として活動しています/好きな言語はJavascriptです
-        </p>
+        <p>NextJs勉強用webアプリ</p>
         {/* <Link href="/posts/first-post">最初の投稿はこちら</Link>  あとで外す*/}
       </section>
 
       {/* gridで表示したい */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>📝エンジニアのブログ</h2>
+        <h2 className={utilStyles.headingLg}>📝内容</h2>
 
         <div className={`${styles.grid}`}>
           {/* 1つ１つのブログをdivで生成してgrid適用させる */}

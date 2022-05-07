@@ -1,10 +1,10 @@
-import styles from "./layout.module.css";
-import Head from "next/head";
-import utilStyles from "../styles/utils.module.css";
-import Link from "next/link";
+import styles from './layout.module.css';
+import Head from 'next/head';
+import utilStyles from '../styles/utils.module.css';
+import Link from 'next/link';
 
-const name = "Shin Code";
-export const siteTitle = "Next.js Blog";
+const name = 'Ryota yamada';
+export const siteTitle = 'Next.js Blog';
 
 function Layout({ children, home }) {
   return (
