@@ -1,3 +1,3 @@
 export default function Custom404() {
-  return <h1>ページが見つかりませんでした。</h1>;
+  return <h1>404 - Page Not Found</h1>;
 }

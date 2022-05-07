@@ -1,13 +1,13 @@
 // /pages/posts/[id].jsページを作成。
 //必要なもの(reactコンポーネント、getStaticPaths, getStaticProps)
 
-import Layout from '../../components/layout';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import Layout from "../../components/layout";
+import { getAllPostIds, getPostData } from "../../lib/posts";
 
-import Head from 'next/head';
-import Date from '../../components/date';
+import Head from "next/head";
+import Date from "../../components/date";
 
-import utilStyles from '../../styles/utils.module.css';
+import utilStyles from "../../styles/utils.module.css";
 
 //動的ルーティング設定のための関数。pathsがルーティング設定になっている(開発環境なら毎回リクエスト時に実行される、本番環境ならビルド時だけ実行される。)。
 //idがとりうる値のリストを返す
